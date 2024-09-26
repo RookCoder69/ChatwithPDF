@@ -9,7 +9,10 @@ import{
   ServerCogIcon,
   ZapIcon,
 }from "lucide-react"
+import Image from "next/image";
 import Link from "next/link";
+import screenshot from "../public/AppScreenshot.jpeg"
+import { secureHeapUsed } from "crypto";
 
 
 const feature = [{
@@ -50,6 +53,33 @@ enhancing procuctivity 10x fold effiortlessly.
   <Link href="/dashboard">Get Started</Link>
 </Button>
   </div>
+  <div className="relative overflow-hidden pt-16">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <Image
+      alt="App Screenshot"
+      src={screenshot}
+      width={2432}
+      height={1442}
+      className="mb-[-0%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+      />
+<div aria-hidden="true" className="relative">
+
+<div className="absolute -inset-x-32 bottom-0 bg-gradient-to-t from-white/95 pt-[5%]"/>
+
+</div>
+    </div>
+  </div>
+
+<div className="">
+  <dl>
+    {}
+  </dl>
+
+
+</div>
+
+
 </div>
 
     </main>
